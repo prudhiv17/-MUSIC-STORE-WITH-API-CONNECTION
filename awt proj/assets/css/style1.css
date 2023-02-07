@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 70%;
+    width: 87%;
+    
+    /*background-image: url("db.webp");*/
+    /*background-image:-webkit-linear-gradient(top left, #333236, #544b31);*/
+    /*background-image:-webkit-radial-gradient(top left, #0a160c, #19400f);*/
+    background-size: cover;
+    background-position: center;
+   
+    
+   /* background-size: 100% 100%;
+    background-position: center;
+    position: relative;*/
+}
+
+#color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url("s1.png");
+    background-size: 1550px 800px;
+    opacity: 1;
+   
+ }
+
+
+.navbar ul li{
+   
+    list-style: none;
+    display: inline-block;
+    margin: 0px;
+}
+
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 100px;
+    width: 1536px;
+    margin: 0px 0px;
+    background-color: #000000;
+   
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.navbar ul li a{
+    margin-left: 190%;
+    text-decoration: none;
+    color: #f1ecec;
+    font-size: 15px;
+}
+
+.left-col h2{
+    margin-left: auto;
+    font-size: 60px;
+    color: rgb(244, 236, 236);
+    line-height: 110px;
+    float:left;
+}
+
+.right-col h3{
+    
+    font-size: 25px;
+    color: rgb(167, 159, 159);
+    line-height: 50px;
+    
+}
+
+.playlist{
+    padding: 100px 100px ;
+    background-image:-webkit-linear-gradient(top left, #333236, #544b31);
+    
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

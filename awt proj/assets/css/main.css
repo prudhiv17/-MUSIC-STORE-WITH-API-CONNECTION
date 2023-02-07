@@ -1,0 +1,178 @@
+/*********************************background-image:-webkit-linear-gradient(top left, #2c2b2f, #342f1e);************************************Main*/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Corben');
+
+body {
+    color: #D8D8F6;
+    font-family: 'Nunito Sans', sans-serif;
+    background-image:url("s1.png");
+    /* background-image:-webkit-linear-gradient(top left, #333236, #544b31);*/
+     background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 100px;
+    width: 2800px;
+    background-color: black;
+    margin: -7px -15px;
+    color: white;
+}
+
+nav ul li{
+    padding:0 20px;
+}
+/*Nav bar*/
+
+.page-title {
+    font-family: 'Corben', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 900;
+    color: #B18FCF;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #f1ecec;
+    font-size: 15px;
+}
+.navbar {
+    opacity: 1;
+}
+
+.max-vw {
+    max-width: 100vw;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/*****************************************************************Search box*/
+
+.search-box {
+    padding: 20px;
+    text-align: center;
+    color: #fcfcfd;
+    border-right: solid 1px #f6f6f8;
+    max-width: 80vw;
+
+}
+
+.musixmatch-logo {
+    text-align: center;
+
+}
+
+.musixmatch-logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#search {
+    border-radius: 10px;
+}
+
+#search:focus {
+    outline: none;
+    /*needed to be removed as the outline had square corners which interferes with border radius*/
+}
+.container{
+   min-height: 72vh;
+   background-image: url("mic3.jpg");
+   background-size: 10%;
+   color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 25px 200px;
+   width: 1600px;
+   border-radius: 12px;
+   padding: 34px;
+   
+   background-size: cover;
+}
+input {
+    margin: 10px;
+}
+
+/*********************************************************************Buttons*/
+
+.btn-result,
+.btn-srch {
+    background-color: #978897;
+    border-color: #978897;
+    margin: 5px auto 5px;
+}
+
+.btn-srch {
+    width: 125px;
+}
+
+.btn-clear {
+    border-color: #978897;
+    background-color: transparent;
+}
+
+
+.btn-srch:hover,
+.btn-result:hover,
+.btn-clear:hover {
+    background-color: #B18FCF;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+
+.btn-result-mobile {
+    background-color: #978897;
+    border-color: #978897;
+    margin: 5px auto 5px;
+    display: none;
+}
+
+/*********************************************************************Results*/
+
+.results {
+    margin-top: 25px;
+    max-width: 50vw;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+.lyrics {
+    white-space: pre-line; /*Allows the lyrice results string to display in the correct formatting*/
+}
+
+/*************************************************************Media Queries*/
+
+@media (max-width: 767px) {
+    body {
+        background-repeat: repeat-y;
+        /*added to resolve an issue with iOS where the background image will not stay fixed */
+    }
+    .page-title {
+        text-align: center;
+    }
+    .btn-result {
+        display: none;
+    }
+    .btn-result-mobile {
+        display: block;
+    }
+    .results {
+        max-width: 80vw;
+    }
+
+}

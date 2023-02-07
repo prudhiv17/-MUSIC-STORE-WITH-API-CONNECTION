@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+   /* background-image:-webkit-linear-gradient(top left, #333236, #544b31);*/
+    background-image: url("s1.png");
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 100px;
+    width: auto;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+
+/*vol slider*/
+.seek_slider,.volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #83A9FF;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+ }
+
+ .volume_slider::-webkit-slider-thumb,.volume_slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        background: white;
+        border: 3px solid #3774FF;
+        cursor: grab;
+        border-radius: 100%;
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+    opacity: 1.0;
+}
+    
+.seek_slider {
+    width: 60%;
+}
+    
+.volume_slider:hover {
+    opacity: 1.0;
+}
+
+.volume_slider {
+    width: 30%;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+padding: 10px;
+}
+
+
+.navbar ul li{
+   
+    list-style: none;
+    display: inline-block;
+    margin: 05px;
+}
+
+.navbar ul li a{
+    margin-right: auto;
+    
+    text-decoration: none;
+    color: #f1ecec;
+    font-size: 20px;
+}
+
+
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 30px 200px;
+   width: 1100px;
+   border-radius: 12px;
+   padding: 34px;
+   /*background-image:url("dbb.webp");*/
+   background-image: -webkit-radial-gradient(top left,black,gray);
+   opacity: .9;
+   background-size: cover;
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+    margin-left: 150px;
+    font-size: larger;
+}
+
+.songItem{
+    height: 60px;
+    width: 800px;
+    display: flex;
+    background-color: rgb(255, 255, 254);
+    opacity: .85;
+    color: rgb(0, 0, 0);
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  }
